@@ -1,41 +1,31 @@
 <!DOCTYPE html>
- 
-<html>
- 
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .holder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: calc(33.33% - 10px); /* 33.33% width for each item with spacing */
+            margin: 5px;
+            background-color: #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
- 
 <body>
-	<!-- the entire body must be written by student -->
-	<div class="holder">
-		<div class="one">1</div>
-		<div class="one">2</div>
-		<div class="one">3</div>
-		<div class="one">5</div>
-		<div class="one">6</div>
-		<div class="one">7</div>
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
- 
+    <div class="holder">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <!-- Add more items here -->
+    </div>
 </body>
- 
 </html>
- 
-------------------------------
-CSS
- 
- 
-/* Your CSS Code here. */
-.one{
-	width:150px;
-/* 	padding:10px; */
-}
-.holder{
-	display:flex;
-	width:500px;
-	flex-wrap:wrap;
-	flex-direction:row;
-	justify-content:space-evenly;
-}
